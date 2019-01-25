@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MTC2019';
+
+  loadedAccess = 'admin'
+  onNavigate(access: string) {
+    this.loadedAccess = access;
+  }
 }

@@ -1,14 +1,14 @@
-<app-header></app-header>
+<app-header (accessSelected)="onNavigate($event)"></app-header>
 
 <div class="container-fluid">
   <!-- Admin Section -->
-  <app-admin></app-admin>
-  <!-- <p>Admin Hidden</p> -->
+  <app-admin *ngIf="loadedAccess === 'admin'"></app-admin>
+  <p *ngIf="loadedAccess !== 'admin'">Admin Hidden!</p>
   <hr>
 
   <!-- Public Section -->
-  <!-- <app-public></app-public> -->
-  <p>Public Hidden!</p>
+  <app-public *ngIf="loadedAccess === 'public'"></app-public>
+  <p *ngIf="loadedAccess !== 'public'">Public Hidden!</p>
   <hr>
 
 </div>
