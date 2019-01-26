@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Company } from '../company.model';
+import { Company } from '../../../models/company.model';
 
 @Component({
   selector: 'app-company-list',

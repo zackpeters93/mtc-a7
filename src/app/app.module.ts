@@ -19,6 +19,12 @@ import { TicketsComponent } from './admin/jobs/work-orders/tickets/tickets.compo
 import { CompanyDetailComponent } from './admin/companies/company-detail/company-detail.component';
 import { CompanyListComponent } from './admin/companies/company-list/company-list.component';
 import { CompanyItemComponent } from './admin/companies/company-list/company-item/company-item.component';
+import { FacilityDetailComponent } from './admin/companies/company-detail/facilities/facility-detail/facility-detail.component';
+import { FacilityListComponent } from './admin/companies/company-detail/facilities/facility-list/facility-list.component';
+import { FacilityItemComponent } from './admin/companies/company-detail/facilities/facility-list/facility-item/facility-item.component';
+import { AssetsDetailComponent } from './admin/companies/company-detail/facilities/assets/assets-detail/assets-detail.component';
+import { AssetsListComponent } from './admin/companies/company-detail/facilities/assets/assets-list/assets-list.component';
+import { AssetsItemComponent } from './admin/companies/company-detail/facilities/assets/assets-list/assets-item/assets-item.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +43,13 @@ import { CompanyItemComponent } from './admin/companies/company-list/company-ite
     TicketsComponent,
     CompanyDetailComponent,
     CompanyListComponent,
-    CompanyItemComponent
+    CompanyItemComponent,
+    FacilityDetailComponent,
+    FacilityListComponent,
+    FacilityItemComponent,
+    AssetsDetailComponent,
+    AssetsListComponent,
+    AssetsItemComponent
   ],
   imports: [
     BrowserModule,
