@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -25,6 +26,7 @@ import { FacilityItemComponent } from './admin/companies/company-detail/faciliti
 import { AssetsDetailComponent } from './admin/companies/company-detail/facilities/assets/assets-detail/assets-detail.component';
 import { AssetsListComponent } from './admin/companies/company-detail/facilities/assets/assets-list/assets-list.component';
 import { AssetsItemComponent } from './admin/companies/company-detail/facilities/assets/assets-list/assets-item/assets-item.component';
+import { CompanyAddComponent } from './admin/companies/company-add/company-add.component';
 
 @NgModule({
   declarations: [
@@ -49,12 +51,14 @@ import { AssetsItemComponent } from './admin/companies/company-detail/facilities
     FacilityItemComponent,
     AssetsDetailComponent,
     AssetsListComponent,
-    AssetsItemComponent
+    AssetsItemComponent,
+    CompanyAddComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
