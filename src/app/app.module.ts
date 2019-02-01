@@ -27,6 +27,8 @@ import { AssetsDetailComponent } from './admin/companies/company-detail/faciliti
 import { AssetsListComponent } from './admin/companies/company-detail/facilities/assets/assets-list/assets-list.component';
 import { AssetsItemComponent } from './admin/companies/company-detail/facilities/assets/assets-list/assets-item/assets-item.component';
 import { CompanyAddComponent } from './admin/companies/company-add/company-add.component';
+import { AppRoutingModule } from './app-routing.module';
+import { CompaniesStartComponent } from './admin/companies/companies-start/companies-start.component';
 
 @NgModule({
   declarations: [
@@ -52,13 +54,15 @@ import { CompanyAddComponent } from './admin/companies/company-add/company-add.c
     AssetsDetailComponent,
     AssetsListComponent,
     AssetsItemComponent,
-    CompanyAddComponent
+    CompanyAddComponent,
+    CompaniesStartComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
     AngularFontAwesomeModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
